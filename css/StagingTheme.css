@@ -1,0 +1,49 @@
+#sideBar{
+	height:900px;
+}
+#content{
+	height:900px;
+}
+#content p{
+	text-align:center;
+	font-family:Arial,Sans-Serif;
+	font-size:20px;
+}
+#header{
+	text-align:center;
+	font-family:Arial,Sans-serif;
+	font-size:28px;
+}
+#stagePromo{
+	float:left;
+	position:relative;
+	top:10px;
+	left:30px;
+}
+#breakdown{
+	float:left;
+	position:relative;
+	top:10px;
+	left:20px;
+	font-family:Arial, Sans-serif;
+	font-size:20px;
+	width:400px;
+	
+}
+.social{
+	height:30px;
+	width:30px;
+	opacity:.3;
+	margin-left:10px;
+	float:left:
+}
+.social:hover{
+	cursor:pointer;
+	opacity:1;
+}
+
+.socialLink:hover .social{
+	cursor:pointer;
+	opacity:1;
+	
+}

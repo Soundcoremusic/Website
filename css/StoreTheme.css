@@ -1,0 +1,921 @@
+html{
+	background: url("../images/background.png") no-repeat center center fixed;
+	background-repeat:no-repeat;
+	height:100%;
+	background-size:cover;
+	width:100%;
+}
+								/*	WEBSITE WRAP	 */
+#wrap{
+	width:1200px;
+	margin:auto;
+}
+
+					/*NAVIGATION STYLING*/
+nav ul{
+	background:linear-gradient(#808080,#0d0d0d);
+	border-radius: 15px;
+	height:80px;
+	width:1194px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	border:3px solid black;
+}
+
+nav ul li{
+	float:left;
+	height:80px;
+	width:195px;
+	list-style-type:none;
+	text-align:center;
+}
+
+
+nav ul li a{
+	position:relative;
+	top:25px;
+	text-decoration:none;
+	color:white;
+	font-family:Arial Black,Sans-Serif;
+	font-size:24px;
+	padding:3px;
+}
+
+nav ul li:hover{
+		background-color:#000000;
+	
+}
+
+nav ul li a:hover{
+	text-shadow:2px 2px 2px black;
+}
+
+nav ul li:first-child:hover{
+	background-color:#121212;
+	border-radius:10px 0px 0px 10px;
+}		
+
+.dropdown{
+	display:none;
+	position:absolute;
+	width:195px;
+	margin-top:20px;
+}
+.dropdown a{
+	color:white;
+	text-decoration:none;
+	display:block;
+	padding:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:14px;
+	background-color:black;
+	position:relative;
+	z-index: 1;
+}
+.dropdown a:hover{
+	background-color:#708090;
+	
+}
+.dropdown a:first-child{
+
+}
+.dropdown a:last-child{
+	border-radius:0px 0px 10px 10px;
+	
+}
+nav li:hover .dropdown{
+	display:block;
+	
+}
+	
+	
+
+
+										
+			
+								/*End of the navigation styling*/
+
+								
+								
+
+								/*SIDEBAR STYLING*/
+#sideBar{
+	height: 600px;
+	width: 187px;
+	background-color:#ffffff;
+	position:relative;
+	float:left;
+	display:block;
+	border-radius:15px;
+	top:10px;	
+	border:3px solid black;
+}
+							
+								
+								/*CONTENT STYLING*/
+#content{
+	border-radius:15px;
+	height:1420px;
+	width: 1196px;
+	background-color:#ffffff;
+	float:left;
+	position:relative;
+	top:10px;
+	border:3px solid black;
+}
+#side{
+	border-radius:13px 0px 0px 13px;
+	padding:0px;
+	width:197px;
+	background-color: #CACFD2;
+	height:1420px;
+	border-right:3px solid black;
+	float:left;
+}
+
+
+#storeHeader{
+	text-align:center;
+	font-family:Arial Black, Sans-Serif;
+	font-size:28px;
+
+}
+#side button{
+	float:left;
+	height:45px;
+	width:197px;
+	background-color:#5C5C5C;
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	color:white;
+}
+#side button:hover{
+	background-color:#CACFD2;
+	cursor:pointer;
+	color:black;
+}
+#side button:focus{
+	outline:none;
+}
+
+
+
+#categoryHeader{
+	font-family:Arial Black, Sans-Serif;
+	font-size:30px;
+	text-align:center;
+	
+}
+
+.item{
+	height:400px;
+	width:300px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	background-color:black;
+	border-radius:15px;
+	border:3px solid black;
+}
+.itemImg{
+	height:300px;
+	width:100%;
+	border-radius:13px 13px 0px 0px;
+	background: linear-gradient(#CACFD2,#EEEEEE);
+	
+}
+#link{
+	text-decoration:none;
+}
+.itemDesc{
+	text-align:center;
+	color:white;
+	font-family:Arial,Sans-serif;
+	font-size:22px;
+	margin:0px;
+	border-top:3px solid black;
+	padding-top:10px;
+	font-weight:strong;
+}
+.item:hover{
+	cursor:pointer;
+	box-shadow: 10px 10px 10px #888888;
+	
+}
+#pageList{
+	text-align:center;
+}
+.pageNumber{
+	text-align:center;
+	background-color:white;
+	color:black;
+	height:30px;
+	width:30px;
+	border-radius:5px;
+	border:3px solid black;
+	margin-right:10px;	
+	font-family:Arial, Sans-Serif;
+	font-size:18px;
+}
+.pageNumber:hover{
+	color:white;
+	background-color:black;
+	cursor:pointer;
+	
+	
+}
+
+
+								/*Header Styling*/
+header{
+	height:120px;
+	width:1194px;
+	background-color:#ffffff;
+	border-radius:15px;
+	margin-bottom:10px;
+	border:3px solid black;
+}
+
+#scLogo{
+	float:left;
+	height:110px;
+	width:110px;
+	position:relative;
+	top:5px;
+	left:10px;
+}
+
+#Logo{
+	float:left;
+	height:100px;
+	width:350px;
+	position:relative;
+	top:10px;
+	margin-left:10px;
+}
+
+#phone{
+	width:220px;
+	height:120px;
+	float:right;
+	position:relative;
+	right:10px;
+}
+#phone table{
+	width:200px;
+	position:relative;
+	text-align:center;
+
+}
+#phone table tr:first-child{
+	background-color:black;
+	color:white;
+	font-size:20px;
+}
+#phone table td:nth-child(odd){
+	color:white;
+	font-family: Arial,Sans-serif;
+	background-color:black;
+	border-radius:5px;
+}
+
+#phone table td:nth-child(even){
+	color:black;
+	font-family:  Arial,Sans-serif;
+	background-color:white;
+	border-radius:5px;
+	border:2px solid black;
+}
+
+#storeHours{
+	width:160px;
+	height:120px;
+	border-radius:15px;
+	float:right;
+	margin-right:20px;
+}
+
+#Hours{
+	width:150px;
+	position:relative;
+	text-align:center;
+	height:10px;
+	right:20px;
+}
+
+
+
+
+#storeHours table{
+	width:160px;
+	font-size:14px;
+	font-family: Arial,Sans-serif;
+	position:relative;
+	text-align:center;
+}
+
+
+#storeHours table tr:first-child{
+	background-color:black;
+	color:white;
+	font-size:24px;
+	font-family: Arial,Sans-serif;
+}
+
+#storeHours table td:nth-last-child(n+1){
+	height:19px;
+}
+
+
+#storeHours table td:nth-child(odd){
+	color:white;
+	font-family:  Arial,Sans-serif;
+	background-color:black;
+	border-radius:5px;
+}
+
+#storeHours table td:nth-child(even){
+	color:black;
+	font-family:  Arial,Sans-serif;
+	background-color:white;
+	border-radius:5px;
+	border:2px solid black;
+}
+
+
+
+
+
+								/* 	FOOTER STYLING	*/
+
+footer{
+	position:relative;
+	top:20px;
+	width:1200px;
+	height:180px;
+	clear:both;
+	background-color:black;
+	color:white;
+	border-radius:15px;
+	
+}
+footer ul{
+	float:left;
+}
+
+
+.social{
+	height:30px;
+	width:30px;
+	opacity:.3;
+	margin-left:10px;
+	float:left:
+}
+.social:hover{
+	cursor:pointer;
+	opacity:1;
+}
+
+.socialLink:hover .social{
+	cursor:pointer;
+	opacity:1;
+	
+}
+
+footer ul li {
+	list-style-type:none;
+	margin-top:10px;
+}
+
+footer ul li a img{
+	margin-right:10px;
+	border-radius:5px;
+}
+
+#facebook,#reverb ,#twitter{
+	text-decoration:none;
+	color:white;
+	font-family:Arial,Sans-Serif;
+}
+
+
+
+#map{
+	position:relative;
+	margin-right:20px;
+	margin-top:15px;
+	float:right;
+	border-radius:15px;
+	
+}
+
+
+
+
+
+.active{
+	background-color:Black;
+	COLOR:white;
+}
+
+								/*STORE IMAGES*/
+								
+								
+/*PEDALS*/								
+
+
+#sd1{
+	background-image:url("../storePictures/Pedals/sd1.jpg");
+	background-repeat:no-repeat;
+}
+#ph3{
+	background-image:url("../storePictures/Pedals/ph3.jpg");
+}
+#mt2{
+	background-image:url("../storePictures/Pedals/mt-2.jpg");
+}
+#bd2{
+	background-image:url("../storePictures/Pedals/bd-2.jpg");	
+}
+#bf3{
+	background-image:url("../storePictures/Pedals/bf-3.jpg");	
+}
+#oc3{
+	background-image:url("../storePictures/Pedals/oc-3.jpg");
+}
+#ch1{
+	background-image:url("../storePictures/Pedals/ch1.jpg");
+}
+#dd3{
+	background-image:url("../storePictures/Pedals/dd3.jpg");
+}
+
+#neoclone{
+	background-image:url("../storePictures/Pedals/neoclone.jpg");
+}
+
+#soulpreacher{
+	background-image:url("../storePictures/Pedals/soulpreacher.jpg");
+}
+
+
+
+
+/* AMPS */ 
+
+#ktnmini{
+	background-image:url("../storePictures/Amps/ktn-mini.jpg");
+}
+
+#ktnhead{
+	background-image:url("../storePictures/Amps/ktn-head.jpg");
+}
+
+
+#egnater{
+	background-image:url("../storePictures/Amps/Tweaker112x.jpg");
+}
+#katana100{
+		background-image:url("../storePictures/Amps/ktn-100.jpg");
+}
+#microcl{
+		background-image:url("../storePictures/Amps/microcl.jpg");
+}
+#mf400a{
+		background-image:url("../storePictures/Amps/marshall_paisley.jpg");
+}
+#cb20xl{
+		background-image:url("../storePictures/Amps/roland20xl.jpg");
+}
+#ba112{
+		background-image:url("../storePictures/Amps/BA-112.jpg");
+}
+#max112{
+		background-image:url("../storePictures/Amps");
+}
+#lowdown{
+		background-image:url("../storePictures/Amps/line_6_lowdown.jpg");
+}
+#tweaker40{
+		background-image:url("../storePictures/Amps/TweakerHalfStack.jpg");
+}
+#gta15r{
+		background-image:url("../storePictures/Amps/ibanezgta.jpg");
+}
+#gc80a{
+		background-image:url("../storePictures/Amps/laney.jpg");
+}
+#rebel30{
+		background-image:url("../storePictures/Amps/Rebel30MarkII.jpg");
+}
+#cratevfx{
+		background-image:url("../storePictures/Amps/cratevfx.jpg")
+}
+
+
+
+
+/*SPEAKERS*/
+
+#elsgo{
+	background-image:url("../storePictures/Speakers/elsgo.jpg");
+}
+#xp106{
+	background-image:url("../storePictures/Speakers/XP106.jpg");
+}
+
+#cr4{
+	background-image:url("../storePictures/Speakers/cr4.jpg");
+}
+#av42{
+	background-image:url("../storePictures/Speakers/av42.jpg");	
+}
+#hd1221{
+	background-image:url("../storePictures/Speakers/hd1221.jpg");
+}
+#freeplay{
+	background-image:url("../storePictures/Speakers/freeplay.jpg");
+}
+#ksub{	
+	background-image:url("../storePictures/Speakers/ksub.jpg");
+}
+#qsck12{
+	background-image:url("../storePictures/Speakers/qsck12.jpg");
+}
+
+
+
+
+
+
+/*PRO AUDIO*/
+#spiritlive1991{
+	background-image:url("../storePictures/Pro_Audio/spiritLive.jpg");
+}
+#gx7{
+	background-image:url("../storePictures/Pro_Audio/qscamp.jpg");
+}
+#pmp2000{
+	background-image:url("../storePictures/Pro_Audio/pmp2000.jpg");
+}
+#xenyx{
+	background-image:url("../storePictures/Pro_Audio/xenyx.jpg");
+}
+
+#bluetube{
+	background-image:url("../storePictures/Pro_Audio/bluetube.jpg");
+}
+#m350{
+	background-image:url("../storePictures/Pro_Audio/m350.jpg");
+}
+
+
+
+
+
+/* BASSES */
+
+#millenium{
+	background-image:url("../storePictures/Basses/millenium.jpg");
+}
+#edge3{
+	background-image:url("../storePictures/Basses/Edge3.jpg");
+}
+#edge25{
+	background-image:url("../storePictures/Basses/edge2.5.jpg");
+}
+#edge2{
+	background-image:url("../storePictures/Basses/edge2.jpg");
+}
+#APB200WH{
+	background-image:url("../storePictures/Basses/APB200WH.jpg");
+}
+#APB200RD{
+	background-image:url("../storePictures/Basses/APB200RD.jpg");
+}
+#AJB300BC{
+	background-image:url("../storePictures/Basses/AJB300BC.jpg");
+}
+#APB200SB{
+	background-image:url("../storePictures/Basses/APB200SB.jpg");
+}
+#studio4{
+	background-image:url("../storePictures/Basses/stillettoStudio4.jpg")
+}
+
+
+
+
+
+
+
+/* GUITARS - Updated 04/25/2018 */
+
+#deanShire{
+	background-image:url("../storePictures/Guitars/Dean/shire-red.jpg");
+}
+
+#AS6PVSB{
+	background-image:url("../storePictures/Guitars/Austin/AS6PVSB.jpg");
+}
+
+#AS6PBLK{
+	background-image:url("../storePictures/Guitars/Austin/AS6PBLK.jpg");
+}
+
+#RG2550Z{
+	background-image:url("../storePictures/Guitars/Ibanez/RG2550Zi.jpg");
+}
+
+#nashvegas{
+	background-image:url("../storePictures/Guitars/Dean/nvseltam_v3.jpg");
+}
+
+#vantage{
+	background-image:url("../storePictures/Guitars/vantage.jpg");
+}
+
+#s65{
+	background-image:url("../storePictures/Guitars/s65.jpg");
+}
+
+#coltflame{
+	background-image:url("../storePictures/Guitars/Dean/coltfmtbk.jpg");
+}
+
+#wi14{
+	background-image:url("../storePictures/Guitars/wi14.jpg");
+}
+
+
+
+
+/*GUITARS - OLD NEEDS REMOVED!*/
+
+#c-6blue{
+	background-image:url("../storePictures/Guitars/c-6Blue.png");
+}
+#omen6satin{
+	background-image:url("../storePictures/Guitars/schecterSatin.jpg");
+}
+#omen6white{
+	background-image:url("../storePictures/Guitars/schecterWhite.jpg");
+}
+#ac544{
+	background-image:url("../storePictures/Guitars/ac544.jpg");
+}
+#regent{
+	background-image:url("../storePictures/Guitars/regent27.jpg");
+}
+#sf18{
+	background-image:url("../storePictures/Guitars/sf18.jpg");
+}
+#aa25decx{
+	background-image:url("../storePictures/Guitars/austindecx.jpg");
+}
+#AC65CE{
+	background-image:url("../storePictures/Guitars/AC65CE.jpg");
+}
+#ac544{
+	background-image:url("../storePictures/Guitars/ac544.jpg");
+}
+#flattop{
+	background-image:url("../storePictures/Guitars/flattop.jpg");
+}
+#goldtop{
+	background-image:url("../storePictures/Guitars/super6.jpg");
+}
+#resonater{
+	background-image:url("../storePictures/Guitars/resonater.jpg");
+}
+#yamaha{
+	background-image:url("../storePictures/Guitars/yamaha.jpg");
+}
+
+/*MICROPHONES*/
+
+
+#mixdown{
+	background-image:url("../storePictures/Microphones/mixdown.jpg");
+}
+
+#samsonq4{
+	background-image:url("../storePictures/Microphones/Samson-Q4.jpg");
+}
+
+#VT1080{
+	background-image:url("../storePictures/Microphones/VT1080.jpg");
+}
+
+#shure98hc{
+	background-image:url("../storePictures/Microphones/beta98.jpg");
+}
+#pga27lc{
+	background-image:url("../storePictures/Microphones/pga27.jpg");
+}
+#blx14{
+	background-image:url("../storePictures/Microphones/blx14.jpg");
+}
+#hm2{
+	background-image:url("../storePictures/Microphones/HM2.jpg")
+}
+
+/* PERCUSSION*/
+
+#xd80{
+	background-image:url("../storePictures/Percussion/xd80.jpg");
+}
+#td1kv{
+	background-image:url("../storePictures/Percussion/td1kv.jpg");
+}
+#khats{
+	background-image:url("../storePictures/Percussion/khihats.jpg");
+}
+#export4{
+	background-image:url("../storePictures/Percussion/pearlexport.jpg");
+}
+#sabianhats{
+	background-image:url("../storePictures/Percussion/14sabianhats.jpg");
+}
+#b8pro{
+	background-image:url("../storePictures/Percussion/b8propack.jpg");
+}
+#zbtchina{
+	background-image:url("../storePictures/Percussion/18zbtchina.jpg");
+}
+#kcustomride{
+	background-image:url("../storePictures/Percussion/20kcustomride.jpg");	
+}
+#ahihat{
+	background-image:url("../storePictures/Percussion/newbeathithat.jpg");	
+}
+#amediumcrash{
+	background-image:url("../storePictures/Percussion/18mediumthin.jpg");	
+}
+#kride{
+	background-image:url("../storePictures/Percussion/20kride.jpg");	
+}
+#acrash16{
+	background-image:url("../storePictures/Percussion/16mediumthin.jpg");
+}
+
+/*DJ EQUIPMENT*/
+
+#qw100{
+	background-image:url("../storePictures/DJ/qw100.jpg");
+}
+#hex100{
+
+	background-image:url("../storePictures/DJ/hex100.jpg");
+}
+#qa60{
+
+	background-image:url("../storePictures/DJ/qa60.jpg");
+}
+
+#snapshot{
+	background-image:url("../storePictures/DJ/snapshot.jpg");
+}
+
+#stingerstar{
+	background-image:url("../storePictures/DJ/stingerstar.jpg");
+}
+
+#elation{
+	background-image:url("../storePictures/DJ/lightsaver.jpg");
+}
+
+#fx2{
+	background-image:url("../storePictures/DJ/boombox.jpg");
+}
+
+
+#sdj2{
+	background-image:url("../storePictures/DJ/sdj2.jpg");
+}
+#dcdpro{
+	background-image:url("../storePictures/DJ/dcd1000.jpg");
+}
+#pocketscan{
+	background-image:url("../storePictures/DJ/pocketscan.jpg");
+}
+#rmx5{
+	background-image:url("../storePictures/DJ/rmx5.jpg");
+}
+#qd1{
+	background-image:url("../storePictures/DJ/mk2.jpg");
+}
+#q2422{
+	background-image:url("../storePictures/DJ/3channel.jpg");
+}
+
+
+
+
+
+/* FOLK INSTRUMENTS */
+
+
+#covecreek{
+	background-image:url("../storePictures/Folk/covecreek.jpg");
+}
+
+#hondo{
+	background-image:url("../storePictures/Folk/Hondo.jpg");
+}
+#applecreek{
+	background-image:url("../storePictures/Folk/applecreek.jpg");
+}
+
+
+/* KEYBOARDS*/
+
+
+#xwg1{
+	background-image:url("../storePictures/Keyboards/xwg1.jpg");
+}
+#lk260{
+	background-image:url("../storePictures/Keyboards/lk260.jpg");	
+}
+#privia{
+	background-image:url("../storePictures/Keyboards/privia.jpg");	
+}
+#wk6600{
+	background-image:url("../storePictures/Keyboards/WK-6600.jpg");
+}
+#ctk6200{
+	background-image:url("../storePictures/Keyboards/ctk6200.jpg");
+}
+#ctk4400{
+	background-image:url("../storePictures/Keyboards/ctk4400.jpg");
+}
+#px780{
+	background-image:url("../storePictures/Keyboards/PX780.jpg");
+}
+#px760{
+	background-image:url("../storePictures/Keyboards/PX760.jpg");
+}
+#ctx700{
+	background-image:url("../storePictures/Keyboards/ct x700.jpg");
+}
+
+
+
+.itemImg{
+	background-size:100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

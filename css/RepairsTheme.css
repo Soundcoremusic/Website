@@ -1,0 +1,79 @@
+#headerSub{
+	text-align:center;
+	font-size:20px;
+	font-family:Arial,Sans-serif;	
+}
+#content{
+	height:650px;
+}
+#sideBar{
+	height:650px;
+}
+.sideItem{
+	margin-top:50px;
+}
+.disclaimer{
+	margin-top:40px;
+	text-align:center;
+	font-family:Arial,sans-serif;
+	font-style:italic;
+}
+
+#leftButton,#rightButton{
+		height:60px;
+		width:60px;
+		border-radius:30px;
+		border:3px solid black;
+		margin-top:150px;
+}
+#leftButton{
+	float:left;	
+	margin-left:30px;
+	background-image:url("../Repairs/blackLeft.png");
+}
+#rightButton{
+	float:right;
+	margin-right:30px;
+	background-image:url("../Repairs/blackRight.png");
+}
+#leftButton:hover,#rightButton:hover{
+	background-color:black;
+	cursor:pointer;
+}
+#leftButton:hover{
+	background-image:url("../Repairs/whiteLeft.png");
+}
+#rightButton:hover{
+	background-image:url("../Repairs/whiteRight.png");
+}
+
+#audioSub{
+	position:relative;
+	top:305px;
+	left:65px;
+}
+#pickupSub{
+	position:relative;
+	top:30px;
+	left:250px;
+	height:50px;
+	
+}
+.social{
+	height:30px;
+	width:30px;
+	opacity:.3;
+	margin-left:10px;
+	float:left:
+}
+.social:hover{
+	cursor:pointer;
+	opacity:1;
+}
+
+.socialLink:hover .social{
+	cursor:pointer;
+	opacity:1;
+	
+}
+
