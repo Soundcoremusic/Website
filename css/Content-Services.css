@@ -1,0 +1,91 @@
+
+								/*SERVICE CONTENT*/
+
+#transfers{
+	background-image:url("../images/vinyl1.jpg");
+	background-size:100% 100%;
+	opacity:.8;
+}
+#installs{
+	background-image:url("../images/Transfer.jpg");
+	background-size:100% 100%;
+	opacity:.8;
+}
+#installs p{
+	font-size:14px;
+	
+}
+#repairs{
+	background-image:url("../images/repair1.jpg");
+	background-size:100% 100%;
+	opacity:.8;
+}
+
+#DJ{
+	background-image:url("../images/DJ.jpg");
+	background-size:100% 100%;
+	opacity:.8;	
+}
+
+#DJ p {
+	font-size:20px;
+}
+
+#repairs:hover,#installs:hover,#transfers:hover,#DJ:hover{
+	opacity:1;
+}
+
+
+
+.service{
+	display:inline-block;
+	position:relative;
+	left:70px;
+	width:400px;
+	height:350px;
+	margin:10px;
+	border:3px solid black;
+	border-radius:15px;
+	background: linear-gradient(#CACFD2,#EEEEEE);
+	text-align:center;
+	vertical-align: bottom;
+	margin-top:30px;
+
+}
+
+.service p{
+	padding-left:5px;
+	color:white;
+	font-family:Arial,Sans-serif;
+	width:100%;
+	padding:0;
+	position:absolute;
+	bottom:0;
+	background-color:black;
+	height:50px;
+	margin:0;
+	border-radius:0px 0px 10px 10px;
+}
+.service h3{
+	padding-left:5px;
+	color:White;
+	background-color:black;
+	padding:10px;
+	margin:0;
+	border-radius:10px 10px 0px 0px;
+	font-family:Arial,Sans-serif;
+	font-size:26px;
+}
+
+
+.service:hover{
+	box-shadow: 10px 10px 10px #888888;
+}
+.service a{
+	text-decoration:none;
+}
+
+.service.newLine{
+	display:inline-block;
+	position: relative;
+}

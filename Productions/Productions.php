@@ -10,7 +10,8 @@
 <meta charset='UTF-8'>
 
 <title>Sound Core Music & Video | Productions</title>
-<link rel='stylesheet' type='text/css' href='../css/ProductionsTheme.css'>
+<link rel='stylesheet' type='text/css' href='../css/SoundCoreTheme.css'>
+<link rel='stylesheet' type='text/css' href='../css/Content-Productions.css'>
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
 

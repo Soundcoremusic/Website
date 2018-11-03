@@ -1,0 +1,67 @@
+								
+								
+		
+
+				/*CONTENT STYLING*/
+
+				
+#lesPaul{
+	height:350px;
+	width:350px;
+	border:3px solid black;
+	border-radius:15px;
+	float:left;
+	position:relative;
+	margin-left:40px;
+	margin-top:105px;
+}
+
+#banner{
+	clear:both;
+	height:160px;
+	width:992px;
+	position:relative;
+	top:45px;
+}	
+
+#banner h3{
+	text-align:center;
+	font-family:Arial, sans-serif;
+	padding:5px;
+	font-size:20px;
+	margin-bottom:10px;
+	background-color:black;
+	color:white;
+}								
+
+		
+.smallRect{
+	margin-left:20px;
+	width:200px;
+	height:100px;
+}
+.smallSquare{
+	margin-left:20px;
+	width:100px;
+	height:100px;
+	
+}
+
+#welcome{
+	float:left;
+	width:500px;
+	height:350px;
+	text-align:center;
+	font-family:Arial,Sans-serif;
+	font-size:20px;
+	margin-left:40px;
+	margin-top:105px;
+	
+}
+#welcome h3{
+	font-size:32px;
+	
+}
+
+
+

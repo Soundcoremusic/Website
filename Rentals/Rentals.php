@@ -9,7 +9,8 @@
 <meta charset='UTF-8'>
 
 <title>Sound Core Music & Video | Rentals</title>
-<link rel='stylesheet' type='text/css' href='../css/RentalsTheme.css'>
+<link rel='stylesheet' type='text/css' href='../css/SoundCoreTheme.css'>
+<link rel='stylesheet' type='text/css' href='../css/repeater.css'>
 
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
@@ -32,8 +33,21 @@
 						<!--Navigation Bar--> 
 <script src='../js/nav.js'></script>
 						<!--Side bar with selling items-->
-	<canvas id='content' data-processing-sources = "Driver.pde Repeater.pde">
-
+	<canvas id='content'>
+		<div class='repeater'>
+		
+			<div class='panel'>PA & Live Sound
+			</div>
+			<div class='panel'>Video Projectors
+			</div>
+			<div class='panel'>Lights
+			</div>
+			<div class='panel'>Staging & Trussing
+			</div>
+			
+			
+			
+		</div>
 	</canvas>
 
 
