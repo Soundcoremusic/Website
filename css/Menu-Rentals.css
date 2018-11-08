@@ -1,0 +1,53 @@
+
+								/*SERVICE CONTENT*/
+
+
+.panel table{
+	background:#562828;
+	border-radius:15px;
+	margin:10px;
+}
+.panel *{
+	border:0px;
+	padding:0px;
+	border-collapse:collapse;
+
+
+}
+
+.panel tr,.panel td,.panel img{
+	height:200px;
+	width:100%;
+	margin:0px;
+}
+.panel td{
+	padding-left:50px;
+	color:white;
+	font-size: 20px;
+}
+.panel p{
+	opacity:0;
+	padding-left:50px;
+	
+	font-size: 15px;
+}
+.panel img{
+	height:200px;
+	width:300px;
+	border-radius:0px 15px 15px 0px;
+	opacity:0.7;
+	height:200px;
+}
+.panel:hover table{
+	background:#955f5f;
+
+}
+.panel:hover img{
+	opacity:1;
+}
+.panel:link{
+		text-decoration:none;
+}
+.panel:hover p{
+	opacity:1;
+}

@@ -6,6 +6,7 @@ html{
 	width:100%;
 }
 
+
 					/*NAVIGATION STYLING*/
 nav ul{
 	background:linear-gradient(#808080,#0d0d0d);
@@ -154,10 +155,10 @@ nav li:hover .dropdown{
 	
 								/*End of the Side Bar Styling*/
 
-								/*CONTENT CANVAS STYLING*/
+								/*CONTENT STYLING*/
 #content{
 	border-radius:15px;
-	height:600px;
+
 	width: 992px;
 	background-color:#ffffff;
 	float:left;
@@ -166,6 +167,13 @@ nav li:hover .dropdown{
 	top:10px;
 	border:3px solid black;
 }
+#content h3{
+	text-align:center;
+	font-family:Arial;
+	font-size:26px;
+}
+
+
 
 
 								/*End of content*/
