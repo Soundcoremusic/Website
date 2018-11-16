@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="rentalsItem">
 <head>
 
 <!--META DATA -->
@@ -13,6 +13,14 @@
 <link rel='stylesheet' type='text/css' href='../css/Item-View.css'>
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
+<script src='../js/angular.js'></script>
+<script src='../js/itemView.js'></script>
+<?php 
+include 'reference.php';
+
+
+
+?>
 </head>
 
 <body>
@@ -27,20 +35,21 @@
 						<!--Navigation Bar--> 
 <script src='../js/nav.js'></script>
 						<!--Side bar with selling items-->
+
 	<section id='content'>
-		<h3>Rental Item Name</h3>
+		<h3><?php echo($reference[1]); ?> </h3>		<!-- requests Name -->
 		
 		<table id ='view'>
 
 		<tr>
 			<td>
-			<img src = '../images/Dell/Front.png'></img>
+			<img src = '<?php echo('../'.$temp[0] . $temp[1]); ?>' ></img>
 			</td>
 	
 			<td>
 
-			<p>This is a description of the object</p>
-			<a>This is a Link to the Specs</a>
+			<p><?php echo($reference[5]); ?></p> <!-- requests Description -->
+			<a><?php echo('../'.$temp[0] . $temp[2] ); ?></a>		 <!-- requests URL -->
 			</td>
 		</tr>
 		</table>
@@ -48,19 +57,19 @@
 		<table id='gallery'>
 		<tr>
 			<td><a>
-			<img src = '../images/Dell/Back.jpg'></img>
+			<img src = '<?php echo('../'.$temp[0] . $temp[2]); ?>'></img>
 			</a></td>
 			
 			<td><a>
-			<img src = '../images/Dell/Charger.jpg'></img>
+			<img src = '<?php echo('../'.$temp[0] . $temp[3]); ?>'></img>
 			</a></td>
 			
 			<td><a>
-			<img src = '../images/Dell/Multiview.jpg'></img>
+			<img src = '<?php echo('../'.$temp[0] . $temp[4]); ?>'></img>
 			</a></td>
 		
 			<td><a>
-			<img src = '../images/Dell/Side.png'></img>
+			<img src = '<?php echo('../'.$temp[0] . $temp[4]); ?>'></img>
 			</a></td>
 		</tr>
 		</table>

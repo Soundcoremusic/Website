@@ -13,6 +13,11 @@
 <link rel='stylesheet' type='text/css' href='../css/Menu-Rentals.css'>
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
+<?php
+ include 'reference.php';
+
+
+?>
 </head>
 
 <body>
@@ -30,7 +35,7 @@
 	<section id='content'>
 	<h3>Audio Visual Rentals</h3>
 	
-	<a class="panel" href='./RentalsItem.php'>
+	<a class="panel" href='./RentalsItem.php' id="light">
 		<table><tr>
 			<td>LIGHTING<p>
 			words about category
@@ -40,7 +45,7 @@
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./Rentals.php'>
+	<a class="panel" href='./RentalsItem.php' id="truss">
 		<table><tr>
 			<td>TRUSS + STAGING<p>
 			words about category
@@ -50,7 +55,7 @@
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./Rentals.php'>
+	<a class="panel" href='./RentalsItem.php' id="screens">
 		<table><tr>
 			<td>PROJECTORS + SCREENS<p>
 			words about category
@@ -60,7 +65,7 @@
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./Rentals.php'>
+	<a class="panel" href='./RentalsItem.php' id="pa">
 		<table><tr>
 			<td>PA + LIVE SOUND<p>
 			words about category
@@ -70,9 +75,9 @@
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./Rentals.php'>
+	<a class="panel" href='./RentalsItem.php' id="misc" onClick="setInstance();">
 		<table><tr>
-			<td>MISCELLANEOUS<p>
+			<td><?php echo $instance ?><p>
 			words about category
 			</p></td>
 			<td>
@@ -81,8 +86,14 @@
 		</tr></table>
 	</a>
 
-
 	</section>
+	<?php $instance='jub';?>
+	<script type='text/javascript'>
+	function setInstance(){
+		
+		console.log("test");
+	}
+	</script>
 
 
 						<!--Footer of Site-->
