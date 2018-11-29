@@ -13,8 +13,9 @@
 <link rel='stylesheet' type='text/css' href='../css/Menu-Rentals.css'>
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
+<script src='../js/rentals.js'></script>
 <?php
- include 'reference.php';
+ include 'server.php';
 
 
 ?>
@@ -35,53 +36,53 @@
 	<section id='content'>
 	<h3>Audio Visual Rentals</h3>
 	
-	<a class="panel" href='./RentalsItem.php' id="light">
+	<a class="panel" href='./RentalsGallery.php?cat=speaker,misc' >
 		<table><tr>
 			<td>LIGHTING<p>
 			words about category
 			</p></td>
 			<td>
-			<img src='../images/RentalsMenu/lighting.png'></img>
+			<img src='../images/Menu-Pictures/RentalsMenu/lighting.png'></img>
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./RentalsItem.php' id="truss">
+	<a class="panel" href='./RentalsGallery.php?cat=truss' id="truss">
 		<table><tr>
 			<td>TRUSS + STAGING<p>
 			words about category
 			</p></td>
 			<td>
-			<img src='../images/RentalsMenu/stage.jpg'></img>
+			<img src='../images/Menu-Pictures/RentalsMenu/stage.jpg'></img>
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./RentalsItem.php' id="screens">
+	<a class="panel" href='./RentalsGallery.php?cat=projector' id="screens">
 		<table><tr>
 			<td>PROJECTORS + SCREENS<p>
 			words about category
 			</p></td>
 			<td>
-			<img src='../images/RentalsMenu/projectors.jpg'></img>
+			<img src='../images/Menu-Pictures/RentalsMenu/projectors.jpg'></img>
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./RentalsItem.php' id="pa">
+	<a class="panel" href='./RentalsGallery.php?cat=misc' id="pa">
 		<table><tr>
 			<td>PA + LIVE SOUND<p>
 			words about category
 			</p></td>
 			<td>
-			<img src='../images/RentalsMenu/mixingBoard.jpg'></img>
+			<img src='../images/Menu-Pictures/RentalsMenu/mixingBoard.jpg'></img>
 			</td>
 		</tr></table>
 	</a>
-	<a class="panel" href='./RentalsItem.php' id="misc" onClick="setInstance();">
+	<a class="panel" href='./RentalsGallery.php' id="misc" onClick="setInstance();">
 		<table><tr>
-			<td><?php echo $instance ?><p>
+			<td>MISC<p>
 			words about category
 			</p></td>
 			<td>
-			<img src='../images/RentalsMenu/miscellaneous.jpg'></img>
+			<img src='../images/Menu-Pictures/RentalsMenu/miscellaneous.jpg'></img>
 			</td>
 		</tr></table>
 	</a>

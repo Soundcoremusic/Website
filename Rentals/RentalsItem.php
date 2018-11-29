@@ -14,11 +14,9 @@
 <link rel="shortcut icon" href="../images/favicon.png" />
 <script src='../js/jquery.js'></script>
 <script src='../js/angular.js'></script>
-<script src='../js/itemView.js'></script>
+<script src='../js/rentals.js'></script>
 <?php 
-include 'reference.php';
-
-
+include 'server.php';
 
 ?>
 </head>
@@ -37,41 +35,32 @@ include 'reference.php';
 						<!--Side bar with selling items-->
 
 	<section id='content'>
-		<h3><?php echo($reference[1]); ?> </h3>		<!-- requests Name -->
+		<h3><?php echo($sqlfd[$itemfd][1]); ?> </h3>		<!-- requests Name -->
 		
 		<table id ='view'>
-
 		<tr>
 			<td>
-			<img src = '<?php echo('../'.$temp[0] . $temp[1]); ?>' ></img>
+			<img src = '<?php echo('../' . json_decode($sqlfd[$itemfd][5])[0]); ?>' >
 			</td>
 	
 			<td>
 
-			<p><?php echo($reference[5]); ?></p> <!-- requests Description -->
-			<a><?php echo('../'.$temp[0] . $temp[2] ); ?></a>		 <!-- requests URL -->
+			<p><?php echo($sqlfd[$itemfd][2]); ?></p> 						<!-- requests Description -->
+			<a><?php echo('../'.$sqlfd[$itemfd][4]); ?></a>		 <!-- requests URL -->
 			</td>
 		</tr>
 		</table>
 		
 		<table id='gallery'>
-		<tr>
-			<td><a>
-			<img src = '<?php echo('../'.$temp[0] . $temp[2]); ?>'></img>
-			</a></td>
-			
-			<td><a>
-			<img src = '<?php echo('../'.$temp[0] . $temp[3]); ?>'></img>
-			</a></td>
-			
-			<td><a>
-			<img src = '<?php echo('../'.$temp[0] . $temp[4]); ?>'></img>
-			</a></td>
+			<tr>
 		
-			<td><a>
-			<img src = '<?php echo('../'.$temp[0] . $temp[4]); ?>'></img>
-			</a></td>
-		</tr>
+		<?php for ($i=0 ; $i<count(json_decode($sqlfd[$itemfd][5])) ; $i++){
+			echo("<td><a><img src ='../" 
+			. json_decode($sqlfd[$itemfd][5])[$i] .
+			"'></img></a></td>");
+		}?>
+		
+			</tr>
 		</table>
 	
 	</section>
